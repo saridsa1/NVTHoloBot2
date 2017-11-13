@@ -43,7 +43,7 @@ bot.library(qnaMakerTools.createLibrary());
 
 var basicQnAMakerDialog = new builder_cognitiveservices.QnAMakerDialog({
 	recognizers: [recognizer],
-	defaultMessage: 'No match! Try changing the query terms!',
+	defaultMessage: 'I am not sure how to answer that!',
 	qnaThreshold: 0.3,
 	feedbackLib: qnaMakerTools
 });
