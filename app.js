@@ -36,7 +36,7 @@ var bot = new builder.UniversalBot(connector);
 
 var recognizer = new builder_cognitiveservices.QnAMakerRecognizer({
                 knowledgeBaseId: process.env.QnAKnowledgebaseId, 
-    subscriptionKey: process.env.QnASubscriptionKey, top: 3});
+    subscriptionKey: process.env.QnASubscriptionKey});
     
 var qnaMakerTools = new builder_cognitiveservices.QnAMakerTools();
 bot.library(qnaMakerTools.createLibrary());
